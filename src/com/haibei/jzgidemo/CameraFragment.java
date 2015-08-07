@@ -19,7 +19,7 @@ public class CameraFragment extends Fragment {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		
-		ri = new RenderInterface();
+		ri = new RenderInterface(getActivity());
 	}
 
 
@@ -32,17 +32,7 @@ public class CameraFragment extends Fragment {
 		View v = inflater.inflate(R.layout.fragment_glsurfaceview, parent, false);
 		
 		ri.setGlSurfaceView((GLSurfaceView)v.findViewById(R.id.glsurfaceview));
-		
-//		glsurfaceview = (GLSurfaceView)v.findViewById(R.id.glsurfaceview);
-//		glsurfaceview.setEGLContextClientVersion(2);
-//		glsurfaceview.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
-//		glsurfaceview.getHolder().setFormat(PixelFormat.RGBA_8888);
-//		glsurfaceview.setRenderer(mRenderer);
-//		glsurfaceview.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
-//		glsurfaceview.requestRender();
-		
 
-		
 		return v;
 	}
 
