@@ -1,0 +1,4 @@
+bin/
+gen/android/support/v7/appcompat/R.java
+gen/com/haibei/jzgidemo/R.java
+gen/com/haibei/jzgidemo/BuildConfig.java
