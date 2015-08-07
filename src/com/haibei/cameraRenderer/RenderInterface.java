@@ -5,12 +5,12 @@ import android.opengl.GLSurfaceView;
 
 /**
  * @author jizhen
- * Ïàµ±ÓÚÓëcontroller(mvcµÄc)½»»¥µÄmodel-----ÆäÊµ²»ÊôÓÚmodel
+ * ç›¸å½“äºä¸controller(mvcçš„c)äº¤äº’çš„model-----å…¶å®ä¸å±äºmodel
  */
 public class RenderInterface {
-	//glSurfaceView¶ÔÏóÀ´×Ôactivity
+	//glSurfaceViewå¯¹è±¡æ¥è‡ªactivity
 	private GLSurfaceView glSurfaceView;
-	//jzRenderer×Ô¼º´´½¨
+	//jzRendererè‡ªå·±åˆ›å»º
 	private JZRenderer jzRenderer;
 	
 	public RenderInterface(){
@@ -26,7 +26,7 @@ public class RenderInterface {
 		this.glSurfaceView.setEGLContextClientVersion(2);
 		this.glSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
 		this.glSurfaceView.getHolder().setFormat(PixelFormat.RGBA_8888);
-		//ÕâÒ»²½Îª±ØĞëµÄ£¬·ñÔòglSurfaceView»á±ÀÀ£
+		//è¿™ä¸€æ­¥ä¸ºå¿…é¡»çš„ï¼Œå¦åˆ™glSurfaceViewä¼šå´©æºƒ
 		this.glSurfaceView.setRenderer(jzRenderer);
 		this.glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 		this.glSurfaceView.requestRender();
